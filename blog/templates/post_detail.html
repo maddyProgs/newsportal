@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ post.title }}</title>
+</head>
+<body>
+    <div class="container mt-4">
+        <h1>{{ post.title }}</h1>
+        {% if post.image %}
+            <img src="{{ post.image.url }}" class="img-fluid mb-3" />
+        {% endif %}
+        <p>{{ post.content }}</p>
+        <a href="/">Back to Home</a>
+    </div>
+</body>
+</html>
